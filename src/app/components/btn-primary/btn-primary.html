@@ -1,1 +1,18 @@
-<p>btn-primary works!</p>
+<!-- 
+    Função parenteses
+    Variavel colchetes
+-->
+
+<!-- btn-primary.html -->
+<button 
+  [class]="['btn', variant]" 
+  [disabled]="disabled" 
+  (click)="submit()">
+  
+  @if(!loading){
+    {{ btnText }}
+  }@else {
+    carregando...
+  }
+  
+</button>

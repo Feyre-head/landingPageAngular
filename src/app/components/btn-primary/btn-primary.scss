@@ -1,0 +1,26 @@
+@import '../../../styles.scss';
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    cursor:pointer;
+    
+    &:disabled{
+        opacity:0.6;
+    }
+
+    &.primary {
+        color: #fff;
+        background-color: linear-gradient(90deg, $primary-color 0%, $secondary-color 100%);
+        font-size: 24px;
+        font-weight: bold;        
+    }
+
+    &.secondary {
+        background-color: white;
+        color: $primary-color 100%;
+        font-size: 24px;
+        font-weight: bold;        
+    }
+}
